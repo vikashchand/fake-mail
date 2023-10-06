@@ -1,65 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-	<title>Vikash Chand</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email jaalsaaji yantr patr</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the contact form */
+        body {
+            background: linear-gradient(to right, #8A2BE2, #FF1493, #FF4500);
+        }
 
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, #8A2BE2, #FF1493, #FF4500);
+            color: white;
+        }
+
+        /* Form Section */
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 100%;
+        }
+
+        .form-textarea {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 100%;
+            height: 150px;
+        }
+
+        .form-button {
+            background: linear-gradient(to right, #8A2BE2, #FF1493, #FF4500);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-button:hover {
+            background: linear-gradient(to right, #FF1493, #FF4500, #8A2BE2);
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header CSS Start -->
-<header class="text-black-700 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-     
-      <span class="ml-3 text-xl">Vikash chand</span>
-    </a>
-    
-	
-  </div>
-</header>
-<!-- Header CSS End -->
-<hr>
-
-<!-- Form CSS Start -->
-<!-- Form HTML with Tailwind CSS -->
-<form action="https://vikkujustspoof.000webhostapp.com/mailer.php" method="post">
-  <section class="bg-gradient-to-b from-black to-blue-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="lg:w-1/2 md:w-2/3 mx-auto bg-gray-800 bg-opacity-80 rounded-lg p-8">
-        <div class="grid grid-cols-2 gap-4">
-          <div class="col-span-1">
-            <input class="w-full bg-gray-700 text-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base py-2 px-4" placeholder="Sender's Name" type="text" name="s_name">
-          </div>
-          <div class="col-span-1">
-            <input class="w-full bg-gray-700 text-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base py-2 px-4" placeholder="Sender's Email" type="email" name="s_email">
-          </div>
-          <div class="col-span-1">
-            <input class="w-full bg-gray-700 text-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base py-2 px-4" placeholder="Subject" type="text" name="subject">
-          </div>
-          <div class="col-span-1">
-            <input class="w-full bg-gray-700 text-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base py-2 px-4" placeholder="Receiver's Email" type="email" name="r_email">
-          </div>
-          <div class="col-span-2">
-            <textarea class="w-full bg-gray-700 text-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base py-2 px-4 resize-none" placeholder="Message " name="message"></textarea>
-          </div>
-          <div class="col-span-2 text-center">
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none" type="submit">Send Email</button>
-          </div>
-        </div>
-      </div>
+<!-- Header Section -->
+<header class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-5">
+    <div class="container mx-auto flex justify-between items-center">
+        <a class="text-2xl font-bold" href="#">Vikash Chand</a>
     </div>
-  </section>
-</form>
+</header>
 
-<!-- Form CSS End -->
-<hr>
-
-
-
-
+<!-- Form Section -->
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+        <div class="max-w-md mx-auto form-container p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Email Chal   </h2>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Vikash Dwara Pyaar Se Nirmit  💖🔥</h2>
+            <form action="https://vikkujustspoof.000webhostapp.com/mailer.php" method="post">
+                <div class="mb-4">
+                    <label for="s_name" class="block text-gray-600 font-medium">Sender's Name</label>
+                    <input type="text" id="s_name" name="s_name" class="form-input">
+                </div>
+                <div class="mb-4">
+                    <label for="s_email" class="block text-gray-600 font-medium">Sender's Email</label>
+                    <input type="email" id="s_email" name="s_email" class="form-input">
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-600 font-medium">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-input">
+                </div>
+                <div class="mb-4">
+                    <label for="r_email" class="block text-gray-600 font-medium">Receiver's Email</label>
+                    <input type="email" id="r_email" name="r_email" class="form-input">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-600 font-medium">Message</label>
+                    <textarea id="message" name="message" class="form-textarea"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="form-button">
+                        Send Email
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
 </body>
-</html> 
+</html>
