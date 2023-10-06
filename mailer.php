@@ -27,7 +27,7 @@ if($mail_sent)
 <body>
 <script>
 	alert(\"Email Sended Successfully!\");
-	window.location.replace(\"index.html\");
+	window.location.href = \"https://fake-mail-wheat.vercel.app/\";
 </script>
 </body>
 </html>  ";
@@ -44,10 +44,12 @@ else {
 <body>
 <script>
 	alert(\"Failed to Send Email !\");
-	window.location.replace(\"index.html\");
+	window.location.href = \"https://fake-mail-wheat.vercel.app/\";
 </script>
 </body>
 </html>  ";
 }
 
 ?>
+
+
